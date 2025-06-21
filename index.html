@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1E3A8A;
+            /* Navy Blue */
+            --secondary-color: #F28D35;
+            /* Light Blue */
+            --text-color: #FFFFFF;
+            /* White */
+            --background-color: #F9FAFB;
+            /* Light Gray */
+            --card-bg-color: #FFFFFF;
+            /* White */
+            --card-text-color: #374151;
+            /* Dark Gray */
+            --text-heading: #4F46E5;
+
+            --text-sub-heading: #4F46E5;
+
+            --text-faq: #6F6C90;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--background-color);
+        }
+
+        .primary-bg {
+            background-color: var(--primary-color);
+        }
+
+        .secondary-bg {
+            background-color: var(--secondary-color);
+        }
+
+        .text-primary {
+            color: var(--primary-color);
+        }
+
+        .text-secondary {
+            color: var(--secondary-color);
+        }
+
+        .text-main-heading {
+            color: var(--text-heading);
+        }
+
+        .text-sub-heading {
+            color: var(--text-sub-heading);
+        }
+
+        .text-faq {
+            color: var(--text-faq);
+        }
+
+        .text-white {
+            color: var(--text-color);
+        }
+
+        .card-bg {
+            background-color: var(--card-bg-color);
+        }
+
+        .card-text {
+            color: var(--card-text-color);
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .btn-custom {
+            background-color: #F28D35;
+            color: white;
+            border: none;
+        }
+
+        .accordion-button::after {
+            display: none !important;
+        }
+
+        .accordion-button {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .accordion-button .toggle-icon {
+            font-size: 1.5rem;
+            line-height: 1;
+            transition: transform 0.3s;
+        }
+
+
+        .accordion-button[aria-expanded="true"] .toggle-icon::before {
+            content: "−";
+        }
+
+        .accordion-button[aria-expanded="false"] .toggle-icon::before {
+            content: "+";
+        }
+
+        .accordion-body {
+            padding-top: 0.5rem;
+            color: #555;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero-content {
+            padding: 2rem;
+            background: linear-gradient(135deg, rgb(28, 189, 221), rgb(77, 202, 121));
+            color: white;
+            max-width: 100%;
+
+        }
+
+        @media (min-width: 769px) {
+            .hero-section {
+                position: relative;
+            }
+
+            .hero-content {
+                position: absolute;
+                top: 70%;
+                left: 5%;
+                transform: translateY(-50%);
+                max-width: 40%;
+                max-height: 50%;
+
+            }
+        }
+
+        .hero-heading {
+            font-size: 3.5rem;
+            text-align: left;
+            /* or whatever size fits best */
+        }
+
+        @media (min-width: 769px) {
+            .hero-heading {
+                font-size: 2.5rem;
+            }
+        }
+
+        footer ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer h5 {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="primary-bg text-white">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../imgs/Logo.png" alt="Logo" style="height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">CAREERS</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="text-white text-center position-relative hero-section">
+        <img src="../imgs/hero_section.jpg" alt="Hero Image" class="hero-img w-100">
+        <div class="container hero-content py-5">
+            <h2 class="hero-heading fw-bold">
+                We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
+            </h2>
+            <div class="text-start mt-3">
+                <button class="btn btn-custom text-white mt-3 fq-bold">GET FREE CONSULTATION</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="container my-5">
+        <div class="row g-4">
+            <!-- Web & Mobile App Development -->
+            <div class="col-md-12">
+                <div class="d-flex flex-wrap align-items-center">
+                    <div class="col-md-6">
+                        <img src="../imgs/image 2.png" alt="Web Development" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h3 class="card-title text-main-heading">Web & Mobile App Development</h3>
+                            <p class="card-text">Your web and mobile Apps are pieces of the puzzle to grow your
+                                business. We use frameworks which tailor content and engagement methods to respond to
+                                different intents shown by your potential customers who interact with your business
+                                online.</p>
+                            <button class="btn btn-custom">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Strategy Consulting -->
+            <div class="col-md-12">
+                <div class="d-flex flex-wrap align-items-center flex-row-reverse">
+                    <div class="col-md-6">
+                        <img src="../imgs/image 1.png" alt="Strategy Consulting" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h3 class="card-title text-main-heading">Digital Strategy Consulting</h3>
+                            <p class="card-text">Your digital strategy should complement the overall marketing strategy
+                                of the company. In online marketing, each component will never work in isolation and
+                                every business needs a different mix. We provide a clear concept and strategic overview
+                                to find the most efficient model for your business.</p>
+                            <button class="btn btn-custom">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="text-center text-main-heading mb-4">Frequently Asked Questions</h3>
+
+            <div class="accordion" id="faqAccordion">
+                <!-- FAQ 1 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button
+                            class="accordion-button bg-transparent shadow-none d-flex justify-content-between align-items-center text-sub-heading"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true"
+                            aria-controls="faq1">
+                            Lorem ipsum dolor sit amet consectetur. Lorem ut euismod?
+                            <span class="ms-auto toggle-icon"></span>
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse text-faq" aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="accordion-item border-0 border-bottom">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button
+                            class="accordion-button bg-transparent shadow-none d-flex justify-content-between align-items-center collapsed text-sub-heading"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false"
+                            aria-controls="faq2">
+                            Lorem ipsum dolor sit amet consectetur. Tellus sollicitudin in eget?
+                            <span class="ms-auto toggle-icon"></span>
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse text-faq" aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button
+                            class="accordion-button bg-transparent shadow-none d-flex justify-content-between align-items-center collapsed text-sub-heading"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
+                            aria-controls="faq3">
+                            Lorem ipsum dolor sit amet consectetur. Posuere volutpat nec eu?
+                            <span class="ms-auto toggle-icon"></span>
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse text-faq" aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="primary-bg text-white pt-5">
+        <div class="container">
+            <div class="row text-start text-md-left">
+                <!-- Left: Logo & Description -->
+                <div class="col-md-4 mb-4">
+                    <img src="../imgs/Logo.png" alt="Logo" style="height: 40px;" class="mb-3">
+                    <p style="max-width: 280px;">
+                        Your goal is our target. Not anything in between. We use online marketing platforms and tools to
+                        achieve single objective – your business results.
+                    </p>
+                </div>
+
+                <!-- Middle: Our Technologies -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Our Technologies</h5>
+                    <ul class="list-unstyled">
+                        <li>ReactJS</li>
+                        <li>Gatsby</li>
+                        <li>NextJS</li>
+                        <li>NodeJS</li>
+                    </ul>
+                </div>
+
+                <!-- Right: Our Services -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li>Social Media Marketing</li>
+                        <li>Web & Mobile App Development</li>
+                        <li>Data & Analytics</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer Links -->
+            <div class="text-center pt-3 border-top border-white-50 mt-3">
+                <a href="#" class="text-decoration-none text-white-50 me-3">Privacy Policy</a>
+                <span class="text-white-50">|</span>
+                <a href="#" class="text-decoration-none text-white-50 ms-3">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
